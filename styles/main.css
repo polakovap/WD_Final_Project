@@ -1,0 +1,206 @@
+/*DEFAULT STYLES*/
+* {
+	font-family: 'Times New Roman', Times, serif;
+	max-width: 100vw;
+}
+body {
+	background: #f1fbff;
+}
+.section-padding {
+	padding: 50px 0;
+}
+
+/*STYLES FOR NAVBAR*/
+.logo{
+	height: 80px;
+	margin-right: 5px;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar h1{
+	font-size: 20px;
+}
+
+/*STYLES FOR CAROUSEL SLIDESHOW*/
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+/*STYLES FOR ABOUT AHR SECTION*/
+#aboutResort{
+	margin: 5%;
+}
+#resortTitle, #topPicksTitle{
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+}
+#logo{
+	height: 250px;
+}
+
+/*STYLES FOR TOP PICKS SECTION*/
+.card{
+	background-size: cover;
+	height: auto;
+	margin: 10px;
+}
+.card-body h3{
+	font-size: 2rem;
+}
+
+/*FOOTER*/
+#footerLogo{
+	height: 15vh;
+}
+footer{
+	line-height: 20px;
+}
+footer a{
+	color: white;
+}
+footer .row{
+    margin: 0;
+    padding: 0;
+}
+footer .row img{
+	height: 10vh;
+}
+
+/*MEDIA QUERIES*/
+/*Extra small*/
+@media only screen and (max-width: 576px) {
+	
+	body{
+		font-size: 14px;
+	}
+	.navbar-nav {
+		text-align: center;
+	}
+	.logo{
+		height: 50px;
+	}
+	.navbar h1{
+		font-size: 15px;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 25px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 18px;
+	}
+	#logo{
+		height: 100px;
+	}
+	#footerLogo{
+		height: 10vh;
+	}
+	footer .row img{
+		height: 5vh;
+	}
+}
+/*Small devices*/
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.logo{
+		height: 50px;
+	}
+
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 25px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 18px;
+	}
+	#logo{
+		height: 180px;
+	}
+	#footerLogo{
+		height: 10vh;
+	}
+	footer .row img{
+		height: 5vh;
+	}
+}
+
+/*Medium devices*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption p {
+		width: 100%;
+	}
+	#logo{
+		height: 180px;
+	}
+	#footerLogo{
+		height: 10vh;
+	}
+	footer .row img{
+		height: 5vh;
+	}
+}

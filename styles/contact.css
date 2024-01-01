@@ -1,0 +1,169 @@
+/*DEFAULT STYLES*/
+* {
+	font-family: 'Times New Roman', Times, serif;
+	max-width: 100vw;
+}
+body {
+	background: #f1fbff;
+}
+.section-padding {
+	padding: 50px 0;
+}
+
+/*STYLES FOR NAVBAR*/
+.logo{
+	height: 80px;
+	margin-right: 5px;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar h1{
+	font-size: 20px;
+}
+
+/*STYLES FOR INFO SECTION*/
+#infoBox{
+	margin: 10%;
+}
+#contact{
+    margin-bottom: 10%;
+}
+#contact p{
+    margin: 0;
+}
+#para{
+    position: relative;
+}
+#para::before {
+    content: '';
+    position: absolute;
+    left: -1px; /* Adjust the position of the line */
+    top: 0;
+    height: 100%; /* Adjust the height of the line */
+    width: 1px; /* Adjust the width of the line */
+    background-color: #000; /* Adjust the color of the line */
+}
+#para img{
+    height:40vh;
+}
+#infoBox h2{
+	text-transform: uppercase;
+	font-size: 25px;
+    margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+/*FOOTER*/
+#footerLogo{
+	height: 15vh;
+}
+footer{
+	line-height: 20px;
+}
+footer a{
+	color: white;
+}
+footer .row{
+    margin: 0;
+    padding: 0;
+}
+footer .row img{
+	height: 10vh;
+}
+
+/*MEDIA QUERIES*/
+/*Extra small*/
+@media only screen and (max-width: 576px) {
+	
+	body{
+		font-size: 14px;
+	}
+	.navbar-nav {
+		text-align: center;
+	}
+	.logo{
+		height: 50px;
+	}
+	.navbar h1{
+		font-size: 14px;
+	}
+	#para img{
+		height:30vh;
+	}
+	#infoBox{
+		margin: 5%;
+	}
+	#footerLogo{
+		height: 10vh;
+	}
+	footer .row img{
+		height: 5vh;
+	}
+}
+/*Small devices*/
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+	body{
+		font-size: 14px;
+	}
+	.navbar-nav {
+		text-align: center;
+	}
+	.logo{
+		height: 50px;
+	}
+	#para img{
+		height:30vh;
+	}
+	#footerLogo{
+		height: 10vh;
+	}
+	footer .row img{
+		height: 5vh;
+	}
+}
+
+/*Medium devices*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#para img{
+		height:30vh;
+	}
+	#footerLogo{
+		height: 10vh;
+	}
+	footer .row img{
+		height: 5vh;
+	}
+	#contact h2{
+		font-size: 18px;
+	}
+	#para img{
+		height:30vh;
+	}
+}
+/*large devices*/
+@media only screen and (min-width: 992px) and  (max-width: 1199px){
+	#footerLogo{
+		height: 10vh;
+	}
+	footer .row img{
+		height: 8vh;
+	}
+	#para img{
+		width: 55vw;
+		height:auto;
+	}
+}
+
