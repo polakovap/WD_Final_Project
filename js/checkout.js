@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // If validation fails, prevent form submission
             event.preventDefault();
         } else {
-            window.location.href="successpayment.html";
+            window.location.href="successPayment.html";
         }
     });
 
